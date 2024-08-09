@@ -10,14 +10,14 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between ">
-      <HeroSection/>
-     
-      <ShowCaseVideos />
-       <StatsBanner />
-      <AdPicture />
-      <AdvantageList/>
+      <HeroSection />
 
-      <Footer/>
+      <ShowCaseVideos />
+      <StatsBanner />
+      {/* <AdPicture /> */}
+      <AdvantageList />
+
+      <Footer />
     </main>
   )
 }

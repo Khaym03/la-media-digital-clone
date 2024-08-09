@@ -84,8 +84,8 @@ const Item = ({ title, description }: ItemProps) => {
 
 export default function AdvantageList() {
   return (
-    <section className="flex flex-col justify-center items-center w-screen  py-20">
-      <div className="container flex flex-col justify-center items-center w-screen">
+    <section className="flex flex-col justify-center items-center w-full  py-20">
+      <div className="container flex flex-col justify-center items-center">
         <H2>¿Lo necesitas? nosotros lo tenemos.</H2>
         <p className="text-center text-balance text-lg text-black/60 max-w-[1000px] mt-4">
           En la agencia de Marketing La Media Digital impulsamos tu marca con
