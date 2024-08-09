@@ -67,3 +67,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+body::-webkit-scrollbar-track {
+  background: white; /* Color del área de seguimiento */
+}
+

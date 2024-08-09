@@ -3,12 +3,13 @@ import { cn } from '@/lib/utils'
 import Link from 'next/link'
 
 interface SocialMediaNavProps {
-  className: string
+  className?: string
+  iconSize?: string
 }
 
-export default function SocialMediaNav({ className }: SocialMediaNavProps) {
+export default function SocialMediaNav({ className, iconSize }: SocialMediaNavProps) {
   return (
-    <nav className={cn("flex gap-4", className)}>
+    <nav className={cn("flex gap-4 w-max", className)}>
       {siteConfig.socialMedias &&
         siteConfig.socialMedias.map(item => (
           <Link
@@ -17,7 +18,7 @@ export default function SocialMediaNav({ className }: SocialMediaNavProps) {
             className="grid place-items-center"
             target="_blank"
           >
-            <item.icon size={'1.125rem'} />
+            <item.icon size={iconSize ? iconSize : '1.125rem'} />
           </Link>
         ))}
     </nav>
