@@ -136,7 +136,7 @@ export default function Footer() {
           <div className="container w-full flex flex-col gap-2 justify-center items-center mt-8 md:flex-row-reverse md:justify-between">
             <SocialMediaNav className="flex-row   gap-6" iconSize="2rem" />
             <span className="text-black/60 text-sm whitespace-nowrap">
-              © 2024 La media digital, Inc.
+              © 2024 La media digital, Inc. All rights reserved.
             </span>
           </div>
         </div>
