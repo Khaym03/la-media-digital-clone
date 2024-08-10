@@ -1,7 +1,12 @@
+"use client"
 import Image from 'next/image'
 import { Button } from './ui/button'
+import { motion } from "framer-motion"
+import { floatAnimation } from '@/lib/animations'
 
 export default function HeroSection() {
+  const {animate, transition} = floatAnimation()
+
   return (
     <section className="h-[calc(100vh+46px)] flex flex-col justify-center items-center bg-[radial-gradient(ellipse_200%_100%_at_bottom,#7653c09e,#ffffff_80%)] w-full relative ">
       <div className="container flex flex-col justify-center items-center">
@@ -26,21 +31,25 @@ export default function HeroSection() {
         
       </div> */}
 
-      <Image
+      <motion.img
         className="w-[400px] rounded-xl absolute right-4 bottom-40"
         width={500}
         height={500}
         src={'/instagram.png'}
         alt="hero-image"
-        priority
+        animate={animate}
+        transition={{
+          ...transition
+        }}
       />
-      <Image
+      <motion.img
         className="w-[166px] rounded-xl left-20 top-40 absolute rotate-12"
         width={500}
         height={500}
         src={'/tiktok.png'}
         alt="hero-image"
-        priority
+        animate={animate}
+        transition={transition}
       />
 
       <div className='h-[46px] w-full'></div>
