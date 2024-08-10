@@ -3,7 +3,7 @@ import { Button } from './ui/button'
 
 export default function HeroSection() {
   return (
-    <section className="h-[calc(100vh-56px)] flex justify-center items-center bg-[radial-gradient(ellipse_200%_100%_at_bottom,#7653c09e,#ffffff_80%)] w-full relative">
+    <section className="h-[calc(100vh+46px)] flex flex-col justify-center items-center bg-[radial-gradient(ellipse_200%_100%_at_bottom,#7653c09e,#ffffff_80%)] w-full relative ">
       <div className="container flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center text-center">
           <h1 className=" pb-1 text-5xl sm:leading-[1.1] md:text-7xl md:leading-[1.2] font-bold tracking-tighter bg-gradient-to-b from-black to-[#2f1666] text-transparent bg-clip-text">
@@ -27,7 +27,7 @@ export default function HeroSection() {
       </div> */}
 
       <Image
-        className="w-[400px] rounded-xl absolute right-10 bottom-20"
+        className="w-[400px] rounded-xl absolute right-4 bottom-40"
         width={500}
         height={500}
         src={'/instagram.png'}
@@ -42,6 +42,8 @@ export default function HeroSection() {
         alt="hero-image"
         priority
       />
+
+      <div className='h-[46px] w-full'></div>
     </section>
   )
 }

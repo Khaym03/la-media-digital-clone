@@ -72,3 +72,47 @@ body::-webkit-scrollbar-track {
   background: white; /* Color del área de seguimiento */
 }
 
+
+.custom-shape-divider-bottom-1723300338 {
+  position: absolute;
+  /* bottom: 0; */
+  top:-45px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1723300338 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 46px;
+}
+
+.custom-shape-divider-bottom-1723300338 .shape-fill {
+  fill: #FFFFFF;
+}
+
+
+.custom-shape-divider-top-1723300552 {
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  bottom: -45px;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1723300552 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 46px;
+}
+
+.custom-shape-divider-top-1723300552 .shape-fill {
+  fill: #FFFFFF;
+}
