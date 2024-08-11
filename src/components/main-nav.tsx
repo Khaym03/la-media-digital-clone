@@ -24,22 +24,22 @@ interface ILink  {
 }
 
 const links: ILink[] = [
-  // {
-  //   name: 'servicos',
-  //   href: '/servicos'
-  // },
-  // {
-  //   name: 'nosotros',
-  //   href: '/nosotros'
-  // },
-  // {
-  //   name: 'blog',
-  //   href: '/blog'
-  // },
-  // {
-  //   name: 'tienda',
-  //   href: '/tienda'
-  // },
+  {
+    name: 'servicos',
+    href: '/servicos'
+  },
+  {
+    name: 'nosotros',
+    href: '/nosotros'
+  },
+  {
+    name: 'blog',
+    href: '/blog'
+  },
+  {
+    name: 'tienda',
+    href: '/tienda'
+  },
   
 
 ]
@@ -48,17 +48,18 @@ export function MainNav() {
   const pathname = usePathname()
 
   return (
-    <header className="sticky top-0 z-50 w-full border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
+    <header className="sticky top-0 z-50 w-full border-border/40 bg-background/5 backdrop-blur supports-[backdrop-filter]:bg-background/5 border-b">
       <NavigationMenu className="container flex h-14 max-w-screen-2xl items-center">
         <div className="w-full mr-4 hidden md:flex">
           <Link href="/" className="mr-4 flex items-center space-x-2 lg:mr-6">
             <Image
-              className="filter invert w-6"
+              className="filter invert w-12"
               width={200}
               height={271}
-              src={'/media_blanca.png'}
+              src={'/logo_blanco.png'}
               alt="media-digital-logo"
             ></Image>
+            {/* <span className='font-bold text-lg'>La Media Digital</span> */}
           </Link>
           <NavigationMenuList className="flex items-center gap-4 text-sm lg:gap-6 absolute top-1/2 -translate-y-1/2">
             {links.map(link => <NavigationMenuItem key={link.href}>

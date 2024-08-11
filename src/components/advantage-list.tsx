@@ -88,10 +88,7 @@ export default function AdvantageList() {
       <div className="container flex flex-col justify-center items-center">
         <H2>¿Lo necesitas? nosotros lo tenemos.</H2>
         <p className="text-center text-balance text-lg text-black/60 max-w-[1000px] mt-4">
-          En la agencia de Marketing La Media Digital impulsamos tu marca con
-          soluciones creativas y efectivas. Manejo de redes sociales, identidad
-          corporativa, jingles comerciales y más. Potencia tu presencia en el
-          mundo digital con nosotros.
+          Entre algunos de nuestros servicios estan...
         </p>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-[1200px] mt-12">
           {data.map(item => (

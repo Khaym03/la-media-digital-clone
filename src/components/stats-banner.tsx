@@ -23,8 +23,8 @@ const Stat = ({ item, follower }: StatProps) => {
 
 export default function StatsBanner() {
   return (
-    <section className="flex justify-center items-center gap-10 py-6 px-4 w-full">
-      {['+2K', '+6k', '+40', '+10'].map((followers, i) => (
+    <section className="flex justify-center items-center gap-10 pb-6 px-4 w-full">
+      {['+6K', '+100', '+2k', '+40'].map((followers, i) => (
         <Stat
           key={siteConfig.socialMedias[i].name}
           item={siteConfig.socialMedias[i]}

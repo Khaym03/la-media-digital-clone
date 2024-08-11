@@ -6,9 +6,9 @@ interface CurveSectionProps {
 
 export default function CurveSection({ children }: CurveSectionProps) {
   return (
-    <section className='relative py-16 w-full'>
+    <section className='relative  w-full'>
       {/* Top curve */}
-      <div className="custom-shape-divider-bottom-1723300338 pt-20">
+      {/* <div className="custom-shape-divider-bottom-1723300338 pt-20">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -20,12 +20,12 @@ export default function CurveSection({ children }: CurveSectionProps) {
             className="shape-fill"
           ></path>
         </svg>
-      </div>
+      </div> */}
 
       {children}
 
       {/* Bottom curve */}
-      <div className="custom-shape-divider-top-1723300552">
+      {/* <div className="custom-shape-divider-top-1723300552">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ export default function CurveSection({ children }: CurveSectionProps) {
             className="shape-fill"
           ></path>
         </svg>
-      </div>
+      </div> */}
     </section>
   )
 }

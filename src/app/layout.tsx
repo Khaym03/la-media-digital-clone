@@ -19,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn('antialiased bg-background', inter.className)}>
+      <head>
+         <link rel="icon" href="/logo_lmd.png" sizes="32x32" type="image/png"/>
+      </head>
+      <body className={cn('antialiased bg-background scroll-smooth relative', inter.className)}>
         <MainNav/>
         {children}
         </body>

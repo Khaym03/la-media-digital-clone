@@ -5,22 +5,25 @@ import Footer from '@/components/footer'
 import HeroSection from '@/components/hero-section'
 import ShowCaseVideos from '@/components/show-case-videos'
 import StatsBanner from '@/components/stats-banner'
-import { Button } from '@/components/ui/button'
-import Image from 'next/image'
+import GradientComponent from '@/components/gradient-component'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between ">
-      <HeroSection />
-      <CurveSection>
-        <StatsBanner />
-        <ShowCaseVideos />
+    <>
+      <GradientComponent />
 
-        {/* <AdPicture /> */}
-        <AdvantageList />
-      </CurveSection>
+      <main className="flex min-h-screen flex-col items-center justify-between relative">
+        <HeroSection />
+        <CurveSection>
+          <StatsBanner />
+          <ShowCaseVideos />
 
-      <Footer />
-    </main>
+          <AdPicture />
+          <AdvantageList />
+        </CurveSection>
+
+        <Footer />
+      </main>
+    </>
   )
 }

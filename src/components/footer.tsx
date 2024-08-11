@@ -123,7 +123,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="flex justify-center items-center py-10 w-full bg-zinc-100">
+      <footer className="flex justify-center items-center pt-20 pb-10 w-full bg-zinc-100">
         <div className="w-max">
           <div className="container grid max-sm:grid-cols-1  md:flex gap-10">
             <BrandSection />
