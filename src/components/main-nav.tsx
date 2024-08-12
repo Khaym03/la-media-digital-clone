@@ -53,9 +53,9 @@ export function MainNav() {
         <div className="w-full mr-4 hidden md:flex">
           <Link href="/" className="mr-4 flex items-center space-x-2 lg:mr-6">
             <Image
-              className="filter invert w-12"
-              width={200}
-              height={271}
+              className="filter invert"
+              width={48}
+              height={42}
               src={'/logo_blanco.png'}
               alt="media-digital-logo"
             ></Image>
