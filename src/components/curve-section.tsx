@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 
 interface CurveSectionProps {
-    children: ReactNode; 
+    children?: ReactNode; 
 }
 
 export default function CurveSection({ children }: CurveSectionProps) {

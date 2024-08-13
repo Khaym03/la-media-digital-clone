@@ -22,7 +22,7 @@ export default function RootLayout({
       <head>
          <link rel="icon" href="/logo_lmd.png" sizes="32x32" type="image/png"/>
       </head>
-      <body className={cn('antialiased bg-background scroll-smooth relative', inter.className)}>
+      <body className={cn('antialiased bg-background scroll-smooth relative overflow-x-hidden', inter.className)}>
         <MainNav/>
         {children}
         </body>

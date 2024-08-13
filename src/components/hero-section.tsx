@@ -8,7 +8,7 @@ const BigImageSection = () => {
   const { animate, transition } = floatAnimation(2,15)
 
   return (
-    <section className="relative rotate-6">
+    <section className="relative hidden md:block rotate-6">
       <motion.div
         animate={animate}
         transition={transition}

@@ -86,7 +86,7 @@ export default function AdvantageList() {
   return (
     <section className="flex flex-col justify-center items-center w-full  py-20">
       <div className="container flex flex-col justify-center items-center">
-        <H2>¿Lo necesitas? nosotros lo tenemos.</H2>
+        <H2 className='text-center'>¿Lo necesitas? nosotros lo tenemos.</H2>
         <p className="text-center text-balance text-lg text-black/60 max-w-[1000px] mt-4">
           Entre algunos de nuestros servicios estan...
         </p>
