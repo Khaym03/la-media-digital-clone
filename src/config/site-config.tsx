@@ -1,6 +1,30 @@
 import { IconType } from 'react-icons'
 import { FaInstagram, FaFacebook, FaTiktok, FaYoutube } from 'react-icons/fa'
 
+ export interface MainNavProps {
+  name: string
+  href: string
+}
+
+const mainNav: MainNavProps[] = [
+  {
+    name: 'servicos',
+    href: '/servicos'
+  },
+  {
+    name: 'nosotros',
+    href: '/nosotros'
+  },
+  {
+    name: 'blog',
+    href: '/blog'
+  },
+  {
+    name: 'tienda',
+    href: '/tienda'
+  }
+]
+
 export interface SocialMedia {
   name: string
   href: string
@@ -34,7 +58,8 @@ export const siteConfig = {
   name: 'La media digital',
   description:
     'La media digital es la agencia de marketing que te ofrece servicios de diseño grafico, manejo de redes sociales y campañas online.',
-  socialMedias
+  socialMedias,
+  mainNav
 }
 
 export type SiteConfig = typeof siteConfig

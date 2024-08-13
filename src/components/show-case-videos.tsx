@@ -62,7 +62,7 @@ export default function ShowCaseVideos() {
     <section className=" w-full flex flex-col justify-center items-center">
       <H2 className="mb-6">Potenciamos tu marca</H2>
       <p className='text-center text-balance text-lg text-black/60 mb-16'>Con videos comerciales</p>
-      <div className="grid grid-cols-1 w-[100px] md:grid-cols-3 lg:grid-cols-3 gap-8 md:w-[600px] lg:w-[800px]">
+      <div className="grid grid-cols-1 max-sm:w-[60%] md:grid-cols-3 lg:grid-cols-3 gap-8 md:w-[600px] lg:w-[800px]">
         {data.map(v => (
           <VideoPlayer key={v.src} poster={v.poster} src={v.src} />
         ))}

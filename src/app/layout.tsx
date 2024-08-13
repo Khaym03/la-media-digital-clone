@@ -4,6 +4,7 @@ import './globals.css'
 import { cn } from '@/lib/utils'
 import { MainNav } from '@/components/main-nav'
 import Image from 'next/image'
+import { MobileNav } from '@/components/mobile-nav'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 
@@ -24,6 +25,9 @@ export default function RootLayout({
       </head>
       <body className={cn('antialiased bg-background scroll-smooth relative overflow-x-hidden', inter.className)}>
         <MainNav/>
+        
+       
+        
         {children}
         </body>
     </html>
