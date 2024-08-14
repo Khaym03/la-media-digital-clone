@@ -41,7 +41,7 @@ export default function HeroSection() {
     <section className="h-[calc(100vh-46px)] flex justify-center items-center w-full relative container gap-12">
       <div className="flex flex-col justify-center items-center h-min">
         <div className="flex flex-col text-left max-w-[600px]">
-          <h1 className="text-balance pb-1 text-5xl sm:leading-[1.1] md:text-7xl md:leading-[1.2] font-bold tracking-tight bg-gradient-to-b from-black to-[#2f1666] text-transparent bg-clip-text">
+          <h1 className="text-balance pb-1 text-5xl lg:text-7xl sm:leading-[1.1] md:leading-[1.2] font-bold tracking-tight bg-gradient-to-b from-black to-[#2f1666] text-transparent bg-clip-text">
             Potencia tu marca con soluciones digitales a tu medida
           </h1>
           <p className="text-base font-medium text-black/80 tracking-tight text-left text-balance max-w-[730px] mt-4">

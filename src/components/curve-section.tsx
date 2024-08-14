@@ -6,7 +6,7 @@ interface CurveSectionProps {
 
 export default function CurveSection({ children }: CurveSectionProps) {
   return (
-    <section className='relative  w-full'>
+    <section className='relative w-full'>
       {/* Top curve */}
       {/* <div className="custom-shape-divider-bottom-1723300338 pt-20">
         <svg
