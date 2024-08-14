@@ -1,3 +1,4 @@
+import PaypalTrigger from '@/components/paypal-trigger'
 import SectionDescription from '@/components/section-description'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
@@ -100,6 +101,7 @@ function PlanCard({ tier }: PlanCardProps) {
           </li>
         ))}
       </ul>
+      <PaypalTrigger/>
     </Card>
   )
 }
