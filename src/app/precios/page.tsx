@@ -1,5 +1,7 @@
+import SectionDescription from '@/components/section-description'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
+import H2 from '@/components/ui/h2'
 import { Check } from 'lucide-react'
 
 const pricingTiers = [
@@ -44,11 +46,18 @@ const pricingTiers = [
 
 export default function Precios() {
   return (
-    <div>
-      <section className="container justify-center flex flex-col lg:flex-row gap-6 items-center lg:items-end mt-10">
-        {pricingTiers.map((tier, i) => (
-          <PlanCard key={i} tier={tier} />
-        ))}
+    <div className="min-h-screen">
+      <section className="container justify-center flex flex-col items-center py-10">
+        <H2 className="text-center">Planes de manejo de redes sociales</H2>
+        <SectionDescription className='mt-8'>
+        Bienvenido a La Media Digital. Aquí encontrarás nuestros servicios y paquetes de marketing y publicidad, diseñados para ayudarte a alcanzar tus objetivos empresariales. Ofrecemos estrategias personalizadas y precios competitivos. Explora nuestras opciones y descubre cómo podemos impulsar el éxito de tu negocio. ¡Da el siguiente paso hacia el crecimiento!
+        </SectionDescription>
+
+        <div className="flex justify-center flex-col lg:flex-row gap-6 items-center lg:items-end mt-10">
+          {pricingTiers.map((tier, i) => (
+            <PlanCard key={i} tier={tier} />
+          ))}
+        </div>
       </section>
     </div>
   )
