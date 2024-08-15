@@ -1,14 +1,19 @@
+import DesignService from '@/components/design-service'
+import Includes from '@/components/includes'
 import PaypalTrigger from '@/components/paypal-trigger'
 import SectionDescription from '@/components/section-description'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
+import Currency from '@/components/ui/currency'
 import H2 from '@/components/ui/h2'
 import { Check } from 'lucide-react'
+import Image from 'next/image'
 
 const pricingTiers = [
   {
     title: 'Plan Emprendedor Básico',
     monthlyPrice: 600,
+    currency: 'cop',
     buttonText: 'Empezar',
     popular: false,
     features: [
@@ -21,6 +26,7 @@ const pricingTiers = [
   {
     title: 'Plan Emprendedor Premium',
     monthlyPrice: 750,
+    currency: 'cop',
     buttonText: 'Empezar',
     popular: true,
     features: [
@@ -33,6 +39,7 @@ const pricingTiers = [
   {
     title: 'Plan Community Manager',
     monthlyPrice: 950,
+    currency: 'cop',
     buttonText: 'Empezar',
     popular: false,
     features: [
@@ -48,6 +55,7 @@ const pricingTiers = [
 export default function Precios() {
   return (
     <div className="min-h-screen">
+      {/* <Image className='max-w-xl rounded-2xl mx-auto' width={1920} height={1080} src={'/MEJORES-PRECIOS-LA-MEDIA-DIGITAL.png'} alt='mejores-precios' /> */}
       <section className="container justify-center flex flex-col items-center py-10">
         <H2 className="text-center">Planes de manejo de redes sociales</H2>
         <SectionDescription className='mt-8'>
@@ -60,6 +68,8 @@ export default function Precios() {
           ))}
         </div>
       </section>
+      <Includes/>
+      <DesignService/>
     </div>
   )
 }
@@ -67,6 +77,7 @@ export default function Precios() {
 interface PricingTier {
   title: string
   monthlyPrice: number
+  currency: string
   buttonText: string
   popular: boolean
   features: string[]
@@ -85,12 +96,7 @@ function PlanCard({ tier }: PlanCardProps) {
           <span className="inline-flex font-medium text-sm">Popular</span>
         )}
       </div>
-      <div className="flex items-baseline gap-1 mt-[30px]">
-        <span className="text-4xl font-bold tracking-tighter leading-none">
-          {tier.monthlyPrice}
-        </span>
-        <span className="tracking-tight font-bold text-black/50">/mes</span>
-      </div>
+      <Currency className='mt-[30px]' contentEnd={'/mes'}>{tier.monthlyPrice}</Currency>
       <Button className="w-full mt-[30px]">{tier.buttonText}</Button>
 
       <ul className="flex flex-col gap-5 mt-8">

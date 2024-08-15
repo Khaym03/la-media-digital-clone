@@ -9,19 +9,19 @@ import { FaInstagram, FaFacebook, FaTiktok, FaYoutube } from 'react-icons/fa'
 const mainNav: MainNavProps[] = [
   {
     name: 'servicos',
-    href: '/servicos'
+    href: '/#'
   },
   {
     name: 'nosotros',
-    href: '/nosotros'
+    href: '/#'
   },
   {
     name: 'blog',
-    href: '/blog'
+    href: '/#'
   },
   {
     name: 'tienda',
-    href: '/tienda'
+    href: '/#'
   }
 ]
 

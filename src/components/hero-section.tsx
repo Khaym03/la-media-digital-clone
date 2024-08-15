@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Button } from './ui/button'
 import { motion } from 'framer-motion'
 import { floatAnimation } from '@/lib/animations'
+import Link from 'next/link'
 
 const BigImageSection = () => {
   const { animate, transition } = floatAnimation(2,15)
@@ -52,8 +53,10 @@ export default function HeroSection() {
           </p>
 
           <div className="flex gap-4 items-center mt-[30px]">
-            <Button>main action</Button>
-            <Button variant={'ghost'}>secondary action</Button>
+          <Button className="" asChild>
+            <Link href={'/precios'}>Precios</Link>
+          </Button>
+            {/* <Button variant={'ghost'}>secondary action</Button> */}
           </div>
         </div>
       </div>

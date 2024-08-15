@@ -22,7 +22,7 @@ export default function Home() {
           <AdvantageList />
         </CurveSection>
 
-        <Footer />
+      
       </main>
     </>
   )

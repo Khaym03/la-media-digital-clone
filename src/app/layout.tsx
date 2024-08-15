@@ -5,6 +5,8 @@ import { cn } from '@/lib/utils'
 import { MainNav } from '@/components/main-nav'
 import Image from 'next/image'
 import { MobileNav } from '@/components/mobile-nav'
+import Footer from '@/components/footer'
+import { ScrollArea } from '@/components/ui/scroll-area'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 
@@ -21,15 +23,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-         <link rel="icon" href="/logo_lmd.png" sizes="32x32" type="image/png"/>
+        <link rel="icon" href="/logo_lmd.png" sizes="32x32" type="image/png" />
       </head>
-      <body className={cn('antialiased bg-background scroll-smooth relative overflow-x-hidden', inter.className)}>
-        <MainNav/>
-        
-       
-        
+      <body
+        className={cn(
+          'antialiased bg-background scroll-smooth relative overflow-x-hidden',
+          inter.className
+        )}
+      >
+        <MainNav />
         {children}
-        </body>
+        <Footer />
+      </body>
     </html>
   )
 }
