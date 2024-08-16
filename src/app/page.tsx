@@ -9,10 +9,10 @@ import GradientComponent from '@/components/gradient-component'
 
 export default function Home() {
   return (
-    <>
+    <div className='max-w-5xl'>
       <GradientComponent />
 
-      <main className="flex min-h-screen flex-col items-center justify-between relative">
+      <main className="flex min-h-screen flex-col items-center justify-between relative ">
         <HeroSection />
         <CurveSection>
           <StatsBanner />
@@ -24,6 +24,6 @@ export default function Home() {
 
       
       </main>
-    </>
+    </div>
   )
 }

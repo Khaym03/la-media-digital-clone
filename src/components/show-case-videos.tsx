@@ -2,7 +2,7 @@
 import { useRef, useState } from 'react'
 import { CirclePlay, CirclePause } from 'lucide-react'
 import H2 from './ui/h2'
-import { Suspense } from 'react'
+import { motion } from 'framer-motion'
 
 interface VideoData {
   poster: string
@@ -27,7 +27,11 @@ const data: VideoData[] = [
   }
 ]
 
-const VideoPlayer = ({ poster, src }: VideoData) => {
+interface VideoPlayerProps extends VideoData {
+  index: number
+}
+
+const VideoPlayer = ({ poster, src, index }: VideoPlayerProps) => {
   const videoRef = useRef<HTMLVideoElement>(null)
   const [isPlaying, setIsPlaying] = useState(false)
 
@@ -40,7 +44,12 @@ const VideoPlayer = ({ poster, src }: VideoData) => {
   }
 
   return (
-   
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.15 }} 
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <video
         onClick={togglePlayPause}
         ref={videoRef}
@@ -53,7 +62,7 @@ const VideoPlayer = ({ poster, src }: VideoData) => {
       >
         <source src={src} type="video/mp4" />
       </video>
-   
+    </motion.div>
   )
 }
 
@@ -61,10 +70,12 @@ export default function ShowCaseVideos() {
   return (
     <section className=" w-full flex flex-col justify-center items-center mt-10">
       <H2 className="mb-6">Potenciamos tu marca</H2>
-      <p className='text-center text-balance text-lg text-black/60 mb-16'>Con videos comerciales</p>
+      <p className="text-center text-balance text-lg text-black/60 mb-16">
+        Con videos comerciales
+      </p>
       <div className="grid grid-cols-1 max-sm:w-[60%] md:grid-cols-3 lg:grid-cols-3 gap-8 md:w-[600px] lg:w-[800px]">
-        {data.map(v => (
-          <VideoPlayer key={v.src} poster={v.poster} src={v.src} />
+        {data.map((v,i) => (
+          <VideoPlayer key={v.src} index={i} poster={v.poster} src={v.src} />
         ))}
       </div>
     </section>

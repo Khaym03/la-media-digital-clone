@@ -54,7 +54,7 @@ const pricingTiers = [
 
 export default function Precios() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen max-w-5xl">
       {/* <Image className='max-w-xl rounded-2xl mx-auto' width={1920} height={1080} src={'/MEJORES-PRECIOS-LA-MEDIA-DIGITAL.png'} alt='mejores-precios' /> */}
       <section className="container justify-center flex flex-col items-center py-10">
         <H2 className="text-center">Planes de manejo de redes sociales</H2>

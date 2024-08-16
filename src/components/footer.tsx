@@ -13,49 +13,49 @@ const data = {
   enterprice: [
     {
       name: 'mision y vision',
-      href: '/mision-y-vision'
+      href: '/'
     },
     {
       name: 'nuestra cultura',
-      href: '/nuestra-cultura'
+      href: '/'
     },
     {
       name: 'nuestra cultura',
-      href: '/nuestra-cultura'
+      href: '/'
     },
     {
       name: 'conocenos',
-      href: '/contact'
+      href: '/'
     },
 
     {
       name: 'trabaja con nosotros',
-      href: '/contact'
+      href: '/'
     }
   ],
   info: [
     {
       name: 'precios',
-      href: '/precios'
+      href: '/'
     },
     {
       name: 'reels y videos',
-      href: '/galeria'
+      href: '/'
     },
     {
       name: 'galeria de diseños',
-      href: '/galeria'
+      href: '/'
     },
     {
       name: 'aprende mas',
-      href: '/aprende-mas'
+      href: '/'
     }
   ],
 
   legal: [
     {
       name: 'Políticas',
-      href: '/politicas'
+      href: '/'
     }
   ]
 }
@@ -124,7 +124,7 @@ export default function Footer() {
   return (
     <>
       <footer className="flex justify-center items-center pt-20 pb-10 w-full bg-zinc-100 overflow-hidden">
-        <div className="w-max">
+        <div className="max-w-5xl">
           <div className="container grid max-sm:grid-cols-1  md:flex gap-10">
             <BrandSection />
             <div className="grid w-full max-w-[440px] max-sm:grid-cols-2 sm:grid-cols-2 md:grid-flow-col gap-8 md:ml-12">

@@ -27,7 +27,7 @@ export default function RootLayout({
       </head>
       <body
         className={cn(
-          'antialiased bg-background scroll-smooth relative overflow-x-hidden',
+          'antialiased bg-background scroll-smooth relative overflow-x-hidden flex flex-col items-center',
           inter.className
         )}
       >

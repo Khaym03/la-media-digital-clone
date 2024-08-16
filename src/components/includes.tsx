@@ -39,7 +39,7 @@ interface IncludesProps {}
 export default function Includes() {
   return (
     <section className="container flex flex-col p-10 ">
-      <div className="container flex flex-col bg-purple-100 rounded-xl py-6 max-w-7xl">
+      <div className="container flex flex-col bg-purple-100 rounded-xl py-6">
         <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">
           Todos nuestro planes incluyen:
         </h3>
